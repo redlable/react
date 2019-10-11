@@ -7,8 +7,8 @@ export class TableHead extends Component {
     return (
       <thead>
         <tr>
-          { titles.map(title => (
-            <th key={ title }>
+          { titles.map((title, index) => (
+            <th key={ index }>
               { title }
             </th>
             ))

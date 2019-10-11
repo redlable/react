@@ -6,10 +6,10 @@ export class TableBody extends Component {
 
     return (
       <tbody>
-        { contacts.map(contact => (
-            <tr>
-              { Object.keys(contact).map((key) => (
-                <td>
+        { contacts.map((contact, index) => (
+            <tr key={ index }>
+              { Object.keys(contact).map((key, i) => (
+                <td key={ i }>
                   { contact[key] }
                 </td>
                 ))
